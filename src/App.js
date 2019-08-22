@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Station from './Station';
+import CurrentlyPlaying from './CurrentlyPlaying';
 
 class App extends React.Component {
 	constructor(props) {
@@ -39,7 +40,7 @@ class App extends React.Component {
 						/>
 					))}
 				</div>
-				<div className="currently-playing">{this.state.currentStation}</div>
+				<CurrentlyPlaying playing={this.state.currentStation} />
 			</div>
 		);
 	}

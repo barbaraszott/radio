@@ -40,3 +40,27 @@ body {
 	max-height: 300px;
 	overflow-y: scroll;
 }
+
+.currently-playing {
+	height: 100px;
+	background: #22222b;
+	border-top: 1px solid #4d505c;
+	border-radius: 0 0 15px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	&-header {
+		display: block;
+		font-size: 0.7em;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #edae61;
+		margin-bottom: 10px;
+	}
+
+	&-station {
+		display: block;
+	}
+}

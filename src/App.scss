@@ -19,12 +19,13 @@ body {
 }
 
 .radio-header {
-	height: 100px;
+	padding: 35px;
+	height: 80px;
 	color: #fff;
 	background: #edae61;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	border-radius: 20px 20px 0 0;
 	text-align: center;
 	text-transform: uppercase;

@@ -43,6 +43,22 @@ body {
 	}
 }
 
+.station {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+	cursor: pointer;
+
+	&-name {
+		display: block;
+		text-transform: capitalize;
+	}
+
+	&-frequency {
+		display: block;
+		font-weight: bold;
+	}
 }
 
 .currently-playing {

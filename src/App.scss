@@ -104,9 +104,9 @@ body {
 
 .active-station {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	margin: 20px;
+	margin: 20px 0;
 
 	&-cover {
 		width: 100px;
@@ -116,5 +116,15 @@ body {
 		background-position: center center;
 		background-size: cover;
 		background-image: url('station-cover.png');
+	}
+
+	&-volume {
+		cursor: pointer;
+		transform: scale(0.5);
+		transition: 0.15s;
+	}
+
+	&-volume:hover {
+		transform: scale(0.6);
 	}
 }

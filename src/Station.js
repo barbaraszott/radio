@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import ActiveStation from './ActiveStation';
+// import PropTypes from 'prop-types';
 
 class Station extends Component {
 	render() {
-		const { name, frequency, onStationClick, isCurrentlyPlaying, info } = this.props;
-		const show = { display: isCurrentlyPlaying ? 'block' : 'none' };
+		const { name, frequency, onStationClick, isCurrentlyPlaying } = this.props;
 
 		return (
 			<React.Fragment>
-				<div
-					onClick={() => {
-						onStationClick(name);
-					}}
-				>
-					<h1>{name}</h1>
-					<span>{frequency}</span>
+				<div className="station" onClick={() => onStationClick(name)}>
+					<span className="station-name">{name}</span>
+					<span className="station-frequency">{frequency}</span>
 				</div>
-				<div className="currently-playing-info" style={show}>
-					{info}
-				</div>
+
+				{isCurrentlyPlaying && <ActiveStation info={this.props.info} />}
 			</React.Fragment>
 		);
 	}

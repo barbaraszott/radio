@@ -32,17 +32,19 @@ class App extends React.Component {
 		return (
 			<div className="radio-container">
 				<div className="radio-header">Stations</div>
-				<div className="radio-stations">
-					{this.state.stations.map((station, i) => (
-						<Station
-							key={i}
-							name={station.name}
-							frequency={station.frequency}
-							info={station.info}
-							onStationClick={this.showStation}
-							isCurrentlyPlaying={this.state.currentStation === station.name}
-						/>
+				<ul className="radio-stations">
+					{stations.map((station, i) => (
+						<li key={i}>
+							<Station
+								name={station.name}
+								frequency={station.frequency}
+								info={station.info}
+								onStationClick={this.showStation}
+								isCurrentlyPlaying={this.state.currentStation === station.name}
+							/>
+						</li>
 					))}
+				</ul>
 				</div>
 				<CurrentlyPlaying playing={this.state.currentStation} />
 			</div>

@@ -3,6 +3,8 @@ import './App.scss';
 import Station from './Station';
 import CurrentlyPlaying from './CurrentlyPlaying';
 // import stationCover from './station-cover.png';
+import backArrow from './imgs/back-arrow.png';
+import switchBtn from './imgs/switch.png';
 
 const stations = [
 	{ name: 'Putin FM', frequency: '66,6', info: '' },
@@ -31,7 +33,15 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="radio-container">
-				<div className="radio-header">Stations</div>
+				<div className="radio-header">
+					<div className="radio-header-back">
+						<img src={backArrow} alt="Back" />
+					</div>
+					Stations
+					<div className="radio-header-switch" onClick={this.switchOff}>
+						<img src={switchBtn} alt="Switch on/off" />
+					</div>
+				</div>
 				<ul className="radio-stations">
 					{stations.map((station, i) => (
 						<li key={i}>

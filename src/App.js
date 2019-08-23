@@ -45,8 +45,9 @@ class App extends React.Component {
 						</li>
 					))}
 				</ul>
+				<div className="currently-playing">
+					{this.state.currentStation && <CurrentlyPlaying playing={this.state.currentStation} />}
 				</div>
-				<CurrentlyPlaying playing={this.state.currentStation} />
 			</div>
 		);
 	}

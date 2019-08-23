@@ -2,17 +2,21 @@ import React from 'react';
 import './App.scss';
 import Station from './Station';
 import CurrentlyPlaying from './CurrentlyPlaying';
+// import stationCover from './station-cover.png';
+
+const stations = [
+	{ name: 'Putin FM', frequency: '66,6', info: '' },
+	{ name: 'Dribbble FM', frequency: '101,2', info: '' },
+	{ name: 'Doge FM', frequency: '99,4', info: '' },
+	{ name: 'Ballads FM', frequency: '87,1', info: '' },
+	{ name: 'Maximum FM', frequency: '142,2', info: '' }
+];
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			currentStation : null,
-			stations       : [
-				{ name: 'station1', frequency: 11.11, info: 'lol11111' },
-				{ name: 'station2', frequency: 22.22, info: 'lol2222' },
-				{ name: 'station3', frequency: 33.33, info: 'lol3333' }
-			]
+			currentStation : null
 		};
 	}
 

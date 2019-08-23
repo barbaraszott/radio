@@ -1,18 +1,16 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
-class CurrentlyPlaying extends PureComponent {
+class CurrentlyPlaying extends Component {
 	render() {
 		const isPlaying = this.props.playing !== null;
 		const show = { display: isPlaying ? 'block' : 'none' };
 		const station = this.props.playing;
 
 		return (
-			<div className="currently-playing">
-				<div style={show}>
-					<span className="currently-playing-header">currently playing</span>
-					<span className="currently-playing-station">{station}</span>
-				</div>
-			</div>
+			<React.Fragment>
+				<span className="currently-playing-header">currently playing</span>
+				<span className="currently-playing-station">{station}</span>
+			</React.Fragment>
 		);
 	}
 }

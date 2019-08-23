@@ -92,3 +92,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: 20px;
+
+	&-cover {
+		width: 100px;
+		height: 100px;
+		border: 1px solid #a2abbd;
+		border-radius: 100%;
+		background-position: center center;
+		background-size: cover;
+		background-image: url('station-cover.png');
+	}
+}

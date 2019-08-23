@@ -22,6 +22,12 @@ class App extends React.Component {
 		};
 	}
 
+	switchOff = () => {
+		this.setState({
+			currentStation : null
+		});
+	};
+
 	showStation = (name) => {
 		const station = this.state.currentStation === name ? null : name;
 

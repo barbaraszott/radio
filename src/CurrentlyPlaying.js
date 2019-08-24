@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class CurrentlyPlaying extends Component {
 	render() {
@@ -10,5 +11,9 @@ class CurrentlyPlaying extends Component {
 		);
 	}
 }
+
+CurrentlyPlaying.propTypes = {
+	playing : PropTypes.string
+};
 
 export default CurrentlyPlaying;

@@ -40,11 +40,11 @@ class App extends React.Component {
 		return (
 			<div className="radio-container">
 				<div className="radio-header">
-					<div className="radio-header-back">
+					<div className="radio-header-icon">
 						<img src={backArrow} alt="Back" />
 					</div>
 					Stations
-					<div className="radio-header-switch" onClick={this.switchOff}>
+					<div className="radio-header-icon" onClick={this.switchOff}>
 						<img src={switchBtn} alt="Switch on/off" />
 					</div>
 				</div>

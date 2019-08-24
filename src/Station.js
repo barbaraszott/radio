@@ -13,7 +13,7 @@ class Station extends Component {
 					<span className="station-frequency">{frequency}</span>
 				</div>
 
-				{isCurrentlyPlaying && <ActiveStation info={this.props.info} />}
+				{isCurrentlyPlaying && <ActiveStation cover={this.props.cover} />}
 			</React.Fragment>
 		);
 	}

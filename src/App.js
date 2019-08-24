@@ -2,16 +2,19 @@ import React from 'react';
 import './App.scss';
 import Station from './Station';
 import CurrentlyPlaying from './CurrentlyPlaying';
-// import stationCover from './station-cover.png';
 import backArrow from './imgs/back-arrow.png';
 import switchBtn from './imgs/switch.png';
 
 const stations = [
-	{ name: 'Putin FM', frequency: '66,6', info: '' },
-	{ name: 'Dribbble FM', frequency: '101,2', info: '' },
-	{ name: 'Doge FM', frequency: '99,4', info: '' },
-	{ name: 'Ballads FM', frequency: '87,1', info: '' },
-	{ name: 'Maximum FM', frequency: '142,2', info: '' }
+	{ name: 'Putin FM', frequency: '66,6' },
+	{ name: 'Dribbble FM', frequency: '101,2' },
+	{ name: 'Doge FM', frequency: '99,4' },
+	{
+		name      : 'Ballads FM',
+		frequency : '87,1',
+		cover     : 'https://coolsilh.com/png-256/2167964-moon_001.png'
+	},
+	{ name: 'Maximum FM', frequency: '142,2' }
 ];
 
 class App extends React.Component {
@@ -54,7 +57,7 @@ class App extends React.Component {
 							<Station
 								name={station.name}
 								frequency={station.frequency}
-								info={station.info}
+								cover={station.cover}
 								onStationClick={this.showStation}
 								isCurrentlyPlaying={this.state.currentStation === station.name}
 							/>

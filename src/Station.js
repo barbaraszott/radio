@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ActiveStation from './ActiveStation';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class Station extends Component {
 	render() {
@@ -18,5 +18,13 @@ class Station extends Component {
 		);
 	}
 }
+
+Station.propTypes = {
+	name               : PropTypes.string.isRequired,
+	frequency          : PropTypes.string.isRequired,
+	cover              : PropTypes.string,
+	onStationClick     : PropTypes.func.isRequired,
+	isCurrentlyPlaying : PropTypes.bool.isRequired
+};
 
 export default Station;

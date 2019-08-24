@@ -27,20 +27,19 @@ body {
 .radio-container {
 	width: 320px;
 	max-height: 600px;
-	box-shadow: 0px 20px 20px 0px #14141a;
 	border-radius: 20px;
+	box-shadow: 0px 20px 20px 0px #14141a;
 }
 
 .radio-header {
-	padding: 35px;
 	@include flex-space-between;
 	height: 80px;
+	padding: 35px;
 	border-radius: 20px 20px 0 0;
-	text-align: center;
-	text-transform: uppercase;
 	background: $orange;
 	color: white;
 	font-weight: bold;
+	text-transform: uppercase;
 
 	&-icon {
 		cursor: pointer;
@@ -54,10 +53,9 @@ body {
 }
 
 .radio-stations {
-	background: #2b2b36;
-	color: #a2abbd;
-	padding: 20px;
 	height: 350px;
+	padding: 20px;
+	background: #2b2b36;
 	overflow-y: auto;
 	list-style: none;
 	margin: 0;
@@ -73,12 +71,10 @@ body {
 	cursor: pointer;
 
 	&-name {
-		display: block;
 		text-transform: capitalize;
 	}
 
 	&-frequency {
-		display: block;
 		font-weight: bold;
 	}
 }
@@ -87,23 +83,18 @@ body {
 	@include flex-center;
 	flex-direction: column;
 	height: 100px;
-	background: #22222b;
+	padding: 20px;
 	border-top: 1px solid #4d505c;
 	border-radius: 0 0 20px 20px;
+	background: #22222b;
 	text-align: center;
-	padding: 20px;
 
 	&-header {
-		display: block;
+		margin-bottom: 10px;
 		color: $orange;
 		font-size: 0.7em;
 		text-transform: uppercase;
 		font-weight: bold;
-		margin-bottom: 10px;
-	}
-
-	&-station {
-		display: block;
 	}
 }
 
@@ -116,9 +107,8 @@ body {
 		height: 100px;
 		border: 1px solid $light-grey;
 		border-radius: 100%;
-		background-position: center center;
+		background-position: center;
 		background-size: cover;
-		background-image: url('station-cover.png');
 	}
 
 	&-volume {

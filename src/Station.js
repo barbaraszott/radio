@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ActiveStation from './ActiveStation';
 import PropTypes from 'prop-types';
+import './Station.scss';
 
 class Station extends Component {
 	render() {

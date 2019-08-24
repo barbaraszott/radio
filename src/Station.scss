@@ -1,0 +1,15 @@
+@import './utilities.scss';
+
+.station {
+	@include flex-space-between;
+	padding: 15px;
+	cursor: pointer;
+
+	&-name {
+		text-transform: capitalize;
+	}
+
+	&-frequency {
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,28 @@
+/* ------------------------------*/
+/*            FONTS              */
+/* ------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* ------------------------------*/
+/*            VARIABLES          */
+/* ------------------------------*/
+
+$orange: #edae61;
+$light-grey: #a2abbd;
+
+/* ------------------------------*/
+/*            MIXINS             */
+/* ------------------------------*/
+
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex-space-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

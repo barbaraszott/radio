@@ -1,19 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-
-$orange: #edae61;
-$light-grey: #a2abbd;
-
-@mixin flex-center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-@mixin flex-space-between {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
+@import './utilities.scss';
 
 body {
 	@include flex-center;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './ActiveStation.scss';
 import plus from './imgs/plus.png';
 import minus from './imgs/minus.png';
 import defaultCover from './imgs/station-cover.png';

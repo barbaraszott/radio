@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/radio/static/css/main.52798c13.chunk.css",
+    "main.js": "/radio/static/js/main.fb65b5e9.chunk.js",
+    "main.js.map": "/radio/static/js/main.fb65b5e9.chunk.js.map",
+    "runtime~main.js": "/radio/static/js/runtime~main.62d18162.js",
+    "runtime~main.js.map": "/radio/static/js/runtime~main.62d18162.js.map",
+    "static/js/2.90821591.chunk.js": "/radio/static/js/2.90821591.chunk.js",
+    "static/js/2.90821591.chunk.js.map": "/radio/static/js/2.90821591.chunk.js.map",
+    "index.html": "/radio/index.html",
+    "precache-manifest.a08a1e9050af15da15395c443346d10a.js": "/radio/precache-manifest.a08a1e9050af15da15395c443346d10a.js",
+    "service-worker.js": "/radio/service-worker.js",
+    "static/css/main.52798c13.chunk.css.map": "/radio/static/css/main.52798c13.chunk.css.map",
+    "static/media/back-arrow.png": "/radio/static/media/back-arrow.8b358c45.png",
+    "static/media/minus.png": "/radio/static/media/minus.9d1af844.png",
+    "static/media/plus.png": "/radio/static/media/plus.10db4c25.png",
+    "static/media/station-cover.png": "/radio/static/media/station-cover.d84344b8.png",
+    "static/media/switch.png": "/radio/static/media/switch.3a0c76ad.png"
+  }
+}

@@ -1,5 +1,7 @@
 # Radio app
 
+My approach to Netguru's recrutiment task.
+
 Live version: https://barbaraszott.github.io/radio/
 
 ## Technologies
